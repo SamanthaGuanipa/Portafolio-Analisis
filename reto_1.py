@@ -27,6 +27,10 @@ y = df[['class']]
 y = (y["class"] == 'P').astype(int) # regresa 1 si el paciente tiene alzheimer y 0 si no
 
 
+#Sin esto tambien me funciona, se refiere a esto?:
+#y = y.to_numpy()
+
+
 
 # Se imprime para visualizar las dimensiones de "X" y "y"
 #print('X size: {}'.format(X.shape))
@@ -130,7 +134,7 @@ El Alzheimer es una enfermedad neurodegenerativa crónica, que afecta la memoria
 una persona, usualmente de edad avanzada. Suele ser una causa de demencia para los adultos mayores. 
 Entre sus síntomas se encuentran: problemas de memoria, desafíos en la resolución de problemas, confusión
 con tiempo y lugar, y la pérdida de habilidades cognitivas. Con base en esta enfermedad, se decidió utilizar el dataset 
-"Handwriting Data to Detect Alzheimer’s Disease" obtenido de Kaggle. Este dataset cuenta con features o características 
+"Alzheimer's Disease Detection from Handwriting" obtenido de Kaggle. Este dataset cuenta con features o características 
 que presenta un adulto mayor al momento de escribir, con características como cuántas veces el bolígrafo tocó la hoja,
 promedio de la presión, el tiempo que le llevó escribir, entre otras. Este proyecto se centró en determinar si un paciente tiene 
 o no tiene Alzheimer, basándose con los features mencionados, entendiendo que este es un problema de clasificación binaria.
